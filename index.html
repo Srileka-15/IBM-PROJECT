@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering Smart Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  
+  <header>
+    <h1>⚙️ Engineering Smart Study Planner</h1>
+    <p>Manage your class schedule, study time, and tasks smartly!</p>
+    <button id="toggleTheme">🌙 Dark Mode</button>
+  </header>
+
+  <main>
+   
+    <section class="schedule">
+      <h2>📅 Weekly Class Schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>9-11 AM</th>
+            <th>11-1 PM</th>
+            <th>2-4 PM</th>
+            <th>4-6 PM</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Math</td>
+            <td>Physics</td>
+            <td>Programming</td>
+            <td>Free Slot</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>Electronics</td>
+            <td>Math</td>
+            <td>Lab Work</td>
+            <td>Projects</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Programming</td>
+            <td>Physics</td>
+            <td>Math</td>
+            <td>Assignments</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>Electronics</td>
+            <td>Projects</td>
+            <td>Programming</td>
+            <td>Free Slot</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Math</td>
+            <td>Electronics</td>
+            <td>Lab Work</td>
+            <td>Seminar</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="chart">
+      <h2>📊 Smart Study Time Distribution</h2>
+      <canvas id="studyChart"></canvas>
+    </section>
+
+    
+    <section class="task-list">
+      <h2>📝 Study Tasks</h2>
+      <form id="taskForm">
+        <input type="text" id="taskName" placeholder="Enter Task" required>
+        <select id="taskSubject" required>
+          <option value="" disabled selected>Choose Subject</option>
+          <option value="Math">Math</option>
+          <option value="Physics">Physics</option>
+          <option value="Programming">Programming</option>
+          <option value="Electronics">Electronics</option>
+        </select>
+        <input type="number" id="taskHours" placeholder="Hours Spent" required>
+        <button type="submit">➕ Add Task</button>
+      </form>
+      <ul id="taskContainer"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Engineering Smart Study Planner © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
